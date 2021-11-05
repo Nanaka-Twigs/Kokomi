@@ -1,0 +1,44 @@
+.result_comment {
+    display: none;
+    text-align: left;
+    font-size: 120%;
+    margin: auto;
+    margin-top: 25%;
+    width: fit-content;
+}
+
+#result_score {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 150%;
+    border: 1px solid grey;
+    background-color: rgb(247, 247, 247);
+    width: fit-content;
+    min-width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 1% 5% 5px 5%;
+}
+
+#result_go_back {
+    margin-top: 25%;
+}
+
+@media only screen and (max-device-width: 450px),
+screen and (max-width: 450px) {
+    #result_score {
+        margin-top: 10%;
+        font-size: 500%;
+        width: 70%;
+    }
+    .result_comment {
+        margin-top: 40%;
+        width: fit-content;
+        font-size: 300%;
+    }
+    #result_go_back {
+        margin-top: 50%;
+        font-size: 300%;
+        width: 40%;
+    }
+}

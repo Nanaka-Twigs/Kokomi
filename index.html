@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Kokomi</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="sys/img/kokomi.jpg" type="image/jpg">
+    <!-- css file -->
+    <link rel="stylesheet" href="sys\css\main.css">
+    <link rel="stylesheet" href="sys\css\menu.css">
+    <link rel="stylesheet" href="sys\css\instruction.css">
+    <link rel="stylesheet" href="sys\css\game.css">
+    <link rel="stylesheet" href="sys\css\result.css">
+    <!-- javascript file -->
+    <script src="sys\js\Sound.js" defer></script>
+    <script src="sys\js\Game.js" defer></script>
+    <script src="sys\js\Main.js" defer></script>
+</head>
+
+<body>
+    <div class="content" id="block_menu">
+        <div id="menu_title">Kokomi</div>
+        <div class="eibutton" id="menu_switch_language" onclick="switch_language()">English</div>
+        <div class="eibutton" id="menu_game_start_easy" onclick="game_mode(0)">EASY</div>
+        <div class="eibutton" id="menu_game_start_hard" onclick="game_mode(1)">HARD</div>
+        <div class="eibutton" id="menu_game_start_hell" onclick="game_mode(2)">HELL</div>
+    </div>
+    <div class="content" id="block_instruction">
+        <div id="instruction_title">How to Play?</div>
+        <div id="instruction_frame">
+            <div id="instruction_img">
+                <img src='sys/img/inst.png'>
+            </div>
+            <div id="instruction_container">
+                <div class="instruction_text" id="instruction_math_question">
+                    <p><strong>「Math Question」</strong></p>
+                    <p>Fistly, solve the math question and determine whether the answer is even or odd.</p>
+                </div>
+                <br>
+
+                <div class="instruction_text" id="instruction_color_question">
+                    <p><strong>「Color Question」</strong></p>
+                    <p>Secondly, look at the color question. If the answer from math question is even, focus on the Text Color; Otherwize, focus on the Background Color.</p>
+
+                </div>
+                <br>
+
+                <div class="instruction_text" id="instruction_color_block">
+                    <p><strong>「Color Block」</strong></p>
+                    <p>Finaly, Pick the correct color block. You will lose mark if you select the wrong answer.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="eibutton" id="instruction_go_back" onclick="back_to_menu()">Back</div>
+        <div class="eibutton" id="instruction_ready" onclick="game_start()">I'm ready!</div>
+    </div>
+    <div class="content" id="block_game">
+        <div id="game_info">
+            <div class="eibutton" id="game_info_back" onclick="game_stop()">Back</div>
+            <div class="eiblock" id="game_info_score"></div>
+            <div class="eiblock" id="game_info_timer"></div>
+        </div>
+        <div id="game_content">
+            <div id="game_content_color_text"></div>
+            <div id="game_content_math_question"></div>
+        </div>
+        <div id="game_hint">
+            <p>Even: Text Color</p>
+            <p>Odd: Background</p>
+        </div>
+        <div id="game_answer_container">
+            <div id="game_answer"></div>
+        </div>
+
+
+    </div>
+    <div class="content" id="block_result">
+        <div id="result_score"></div>
+        <div class="result_comment" id="result_comment_999">
+            It's time to top up your IQ.
+        </div>
+        <div class="result_comment" id="result_comment_0">
+            So so.
+        </div>
+        <div class="result_comment" id="result_comment_1">
+            Good.
+        </div>
+        <div class="result_comment" id="result_comment_2">
+            Faith will move mountains to open.
+        </div>
+        <div class="result_comment" id="result_comment_3">
+            Your wisdom makes the stars tremble.
+        </div>
+        <div class="result_comment" id="result_comment_4">
+            You are an alien, are you!
+        </div>
+        <div class="eibutton" id="result_go_back" onclick="back_to_menu()">Home</div>
+    </div>
+</body>
+
+</html>

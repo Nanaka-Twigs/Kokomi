@@ -1,0 +1,46 @@
+#block_menu {
+    display: block;
+}
+
+#menu_title {
+    font-size: 300%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 150px;
+}
+
+#menu_switch_language {
+    border: none;
+    border-radius: 25%;
+    font-size: 80%;
+    min-width: 70px;
+    margin-bottom: 50px;
+}
+
+#menu_game_start_easy,
+#menu_game_start_hard,
+#menu_game_start_hell {
+    font-size: 130%;
+    margin-bottom: 10px;
+    min-width: 220px;
+}
+
+@media only screen and (max-device-width: 450px),
+screen and (max-width: 450px) {
+    #menu_title {
+        font-size: 700%;
+        margin-bottom: 40%;
+    }
+    #menu_switch_language {
+        font-size: 250%;
+        margin-bottom: 30%;
+    }
+    #menu_game_start_easy,
+    #menu_game_start_hard,
+    #menu_game_start_hell {
+        font-size: 320%;
+        min-width: 40%;
+        border-radius: 10%;
+        margin-bottom: 3%;
+    }
+}

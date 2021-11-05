@@ -1,0 +1,62 @@
+#instruction_img {
+    max-width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+
+#instruction_img img {
+    width: 100%;
+}
+
+#instruction_container {
+    text-align: left;
+    margin-right: 6%;
+}
+
+#instruction_frame {
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+#instruction_title {
+    font-size: 200%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+
+#instruction_go_back,
+#instruction_ready {
+    margin-bottom: 5px;
+}
+
+#instruction_go_back {
+    border: none;
+    border-radius: 25%;
+}
+
+@media only screen and (max-device-width: 450px),
+screen and (max-width: 450px) {
+    #instruction_title {
+        font-size: 500%;
+    }
+    #instruction_img {
+        display: none;
+    }
+    #instruction_container {
+        font-size: 250%;
+        margin-bottom: 20%;
+    }
+    #instruction_go_back,
+    #instruction_ready {
+        margin-bottom: 3%;
+        font-size: 330%;
+        width: 60%;
+    }
+    #instruction_container p {
+        margin-bottom: 0px;
+    }
+}

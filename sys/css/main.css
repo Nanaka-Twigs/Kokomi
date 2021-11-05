@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'ZhuZi';
+    src: url('font/FZFW-ZhuZiAYuanS-M--GB1-0.eot');
+    src: url('font/FZFW-ZhuZiAYuanS-M--GB1-0.eot?#iefix') format('embedded-opentype'), url('font/FZFW-ZhuZiAYuanS-M--GB1-0.woff2') format('woff2'), url('font/FZFW-ZhuZiAYuanS-M--GB1-0.woff') format('woff'), url('font/FZFW-ZhuZiAYuanS-M--GB1-0.ttf') format('truetype'), url('font/FZFW-ZhuZiAYuanS-M--GB1-0.svg#font/FZFW-ZhuZiAYuanS-M--GB1-0') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZhuZi';
+    src: url('font/FZFW-ZhuZiAYuanS-R--GB1-0.eot');
+    src: url('font/FZFW-ZhuZiAYuanS-R--GB1-0.eot?#iefix') format('embedded-opentype'), url('font/FZFW-ZhuZiAYuanS-R--GB1-0.woff2') format('woff2'), url('font/FZFW-ZhuZiAYuanS-R--GB1-0.woff') format('woff'), url('font/FZFW-ZhuZiAYuanS-R--GB1-0.ttf') format('truetype'), url('font/FZFW-ZhuZiAYuanS-R--GB1-0.svg#font/FZFW-ZhuZiAYuanS-R--GB1-0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html,
+body {
+    background-color: rgb(252, 252, 252);
+    font-family: 'Zhuzi';
+    font-size: 20px;
+    -webkit-font-smoothing: auto;
+    height: 100%;
+    margin: 0px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    /* font-family: "Calibri", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+
+.content {
+    display: none;
+    background-color: rgb(252, 252, 252);
+    padding: 25px;
+    text-align: center;
+    animation: fadeIn linear .5s;
+    -webkit-animation: fadeIn linear .5s;
+    -moz-animation: fadeIn linear .5s;
+    -o-animation: fadeIn linear .5s;
+    -ms-animation: fadeIn linear .5s;
+}
+
+.eibutton,
+.eiblock {
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: rgb(247, 247, 247);
+    width: fit-content;
+    min-width: 30%;
+    transition: .3s;
+    margin: auto;
+    padding: 1% 5% 1% 5%;
+}
+
+.eibutton:hover,
+.eiblock:hover {
+    border: 1px solid rgb(141, 139, 110);
+    background-color: rgb(248, 248, 248);
+}
+
+.eibutton:hover {
+    background-color: rgb(255, 255, 242);
+}
