@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'ZhuZi';
+    src: url('font/FZFW-ZhuZiAYuanS-M--GB1-0.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZhuZi';
+    src: url('font/FZFW-ZhuZiAYuanS-R--GB1-0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
