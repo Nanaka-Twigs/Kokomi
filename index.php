@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="sys/img/kokomi.jpg" type="image/jpg">
     <!-- css file -->
+    <link rel="stylesheet" href="sys\css\font.css">
     <link rel="stylesheet" href="sys\css\load.css">
     <link rel="stylesheet" href="sys\css\main.css">
     <link rel="stylesheet" href="sys\css\menu.css">
