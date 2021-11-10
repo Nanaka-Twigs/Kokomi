@@ -24,7 +24,8 @@
     margin-top: 25%;
 }
 
-@media only screen and (max-device-width: 450px),
+
+/* @media only screen and (max-device-width: 450px),
 screen and (max-width: 450px) {
     #result_score {
         margin-top: 10%;
@@ -41,4 +42,4 @@ screen and (max-width: 450px) {
         font-size: 300%;
         width: 40%;
     }
-}
+} */

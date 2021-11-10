@@ -80,7 +80,6 @@ body {
 .content {
     display: none;
     background-color: rgb(252, 252, 252);
-    padding: 25px;
     text-align: center;
     animation: fadeIn linear .5s;
     -webkit-animation: fadeIn linear .5s;

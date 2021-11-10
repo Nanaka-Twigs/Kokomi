@@ -2,23 +2,37 @@ var game = new Game();
 
 var touch = new Sound("sys/sound/touch.mp3");
 
-
-const langs = ['en', 'cn'];
-const lang_num = 2;
-var current_lang = 0;
+$("#user_panel_container").hide();
 
 const translation_key = [
-    'menu_switch_language',
-    'menu_game_start_easy',
-    'menu_game_start_hard',
-    'menu_game_start_hell',
+    // user_panel_container
+    'user_panel_form_label1',
+    'user_panel_form_label2',
+    'user_panel_log_in',
+    'user_panel_sign_up',
+    // block_menu
+    //
+    'menu_main_button_user',
+    'menu_sub_button_log_in',
+    'menu_sub_button_sign_up',
+    // 
+    'menu_main_button_lang',
+    //
+    'menu_main_button_mode',
+    'menu_sub_button_mode0',
+    'menu_sub_button_mode1',
+    'menu_sub_button_mode2',
+    // block_instruction
     'instruction_title',
+    'instruction_text1',
+    'instruction_text2',
+    'instruction_text3',
     'instruction_go_back',
-    'instruction_math_question',
-    'instruction_color_question',
-    'instruction_color_block',
     'instruction_ready',
+    // block_game
+    'game_info_back',
     'game_hint',
+    // result
     'result_comment_999',
     'result_comment_0',
     'result_comment_1',
@@ -29,29 +43,41 @@ const translation_key = [
 ];
 const translation = {
     en: {
-        menu_switch_language: 'English',
-        menu_game_start_easy: 'EASY',
-        menu_game_start_hard: 'HARD',
-        menu_game_start_hell: 'HELL',
-        instruction_title: 'How to Play?',
-        instruction_go_back: 'Back',
-        instruction_math_question: `
-            <p><strong>「Math Question」</strong></p>
-            <p>Fistly, solve the math question and determine whether the answer is even or odd.</p>
+        // user_panel_container
+        'user_panel_form_label1': 'Username',
+        'user_panel_form_label2': 'Password',
+        'user_panel_log_in': 'Log in',
+        'user_panel_sign_up': 'Sign up',
+        //
+        'menu_main_button_user': 'User',
+        'menu_sub_button_log_in': 'Log in',
+        'menu_sub_button_sign_up': 'Sign up',
+        // 
+        'menu_main_button_lang': 'Language',
+        //
+        'menu_main_button_mode': 'Mode',
+        'menu_sub_button_mode0': 'Easy',
+        'menu_sub_button_mode1': 'Hard',
+        'menu_sub_button_mode2': 'Hard',
+        //
+        // block_instruction
+        'instruction_title': 'How to Play',
+        'instruction_text1': `<p><strong>「Color Question」</strong></p>
+        <p>The color question is consist of two colors: the Text Color and the Background Color.</p>
         `,
-        instruction_color_question: `
-            <p><strong>「Color Question」</strong></p>
-            <p>Secondly, look at the color question. If the answer from math question is even, focus on the Text Color; Otherwize, focus on the Background Color.</p>
+        'instruction_text2': `<p><strong>「Math Question」</strong></p>
+        <p>Solve the math question and determine whether the answer is even or odd.</p>
         `,
-        instruction_color_block: `
-            <p><strong>「Color Block」</strong></p>
-            <p>Finaly, Pick the correct color block. You will lose mark if you select the wrong answer.</p>
+        'instruction_text3': `<p><strong>「Color Block」</strong></p>
+        <p>Pick the correct color block based on the anwser from the math question. Chose Text Color is the answer is even; chose Background Color is the answer is odd. You will lose mark if you select the wrong answer.</p>
         `,
-        instruction_ready: `I'm ready!`,
-        game_hint: `
-            <p>Even: Text Color</p>
-            <p>Odd: Background</p>
-        `,
+        'instruction_go_back': 'Back',
+        'instruction_ready': `I'm ready!`,
+        // block_game
+        'game_info_back': 'Back',
+        'game_hint': `<p>Even: Text Color</p>
+        <p>Odd: Background</p>`,
+        // result
         result_comment_999: `It's time to top up your IQ.`,
         result_comment_0: `So so.`,
         result_comment_1: `Good.`,
@@ -61,29 +87,44 @@ const translation = {
         result_go_back: 'Home'
     },
     cn: {
-        menu_switch_language: '中文',
-        menu_game_start_easy: '简单模式',
-        menu_game_start_hard: '困难模式',
-        menu_game_start_hell: '地狱模式',
-        instruction_title: '游戏规则',
-        instruction_go_back: '选择模式',
-        instruction_math_question: `
-            <p><strong>「数学题」</strong></p>
-            <p>首先，演算数学题的答案，判断其实偶数还是奇数。</p>
+        // user_panel_container
+        'user_panel_form_label1': '用户名称',
+        'user_panel_form_label2': '用户密码',
+        'user_panel_log_in': '登录',
+        'user_panel_sign_up': '注册',
+        //
+        //
+        'menu_main_button_user': '用户',
+        'menu_sub_button_log_in': '登录',
+        'menu_sub_button_sign_up': '注册',
+        // 
+        'menu_main_button_lang': '语言',
+        //
+        'menu_main_button_mode': '模式',
+        'menu_sub_button_mode0': '简单',
+        'menu_sub_button_mode1': '困难',
+        'menu_sub_button_mode2': '噩梦',
+        //
+        // block_instruction
+        'instruction_title': '游戏规则',
+        'instruction_text1': `<p><strong>「颜色题」</strong></p>
+        <p>颜色题由两种颜色构成：文字颜色，以及背景颜色</p>
         `,
-        instruction_color_question: `
-            <p><strong>「颜色题」</strong></p>
-            <p>随后，观察颜色题。假如数学题的答案为偶数，则选择文字颜色；反之则选择背景的颜色。</p>
+        'instruction_text2': `<p><strong>「数学题」</strong></p>
+        <p>演算数学题的答案，判断其实偶数还是奇数。</p>
         `,
-        instruction_color_block: `
-            <p><strong>「色块」</strong></p>
-            <p>最后，选择正确的色块。假如选错，则会受到惩罚。</p>
+        'instruction_text3': `<p><strong>「色块」</strong></p>
+        <p>根据数学题的答案选择正确的色块。偶数选择文字颜色，奇书选择背景颜色。选错会受到惩罚。</p>
         `,
-        instruction_ready: `准备好了`,
-        game_hint: `
-            <p>偶数：文字颜色</p>
-            <p>奇数：背景颜色</p>
+        'instruction_go_back': '菜单',
+        'instruction_ready': `准备好了`,
+        // block_game
+        'game_info_back': '菜单',
+        'game_hint': `
+        <p>偶数：文字颜色</p>
+        <p>奇数：背景颜色</p>
         `,
+        // result
         result_comment_999: `你的智商该充值了。`,
         result_comment_0: `一般般。`,
         result_comment_1: `不错。`,
@@ -94,7 +135,7 @@ const translation = {
     }
 }
 
-
+// Hach mode
 var str = "";
 document.addEventListener('keypress', hackcode);
 
@@ -107,15 +148,15 @@ function hackcode(e) {
     }
 }
 
-function switch_language() {
+// Toggle bind
+
+
+
+function switch_language(lang) {
     touch.play();
-    current_lang++;
-    if (current_lang >= lang_num) {
-        current_lang = 0;
-    }
-    game.switch_language(langs[current_lang]);
+    game.switch_language(lang);
     for (var key of translation_key) {
-        document.getElementById(key).innerHTML = translation[langs[current_lang]][key];
+        document.getElementById(key).innerHTML = translation[lang][key];
 
     }
 

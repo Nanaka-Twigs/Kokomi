@@ -3,44 +3,47 @@
 }
 
 #menu_title {
-    font-size: 300%;
+    font-size: 9vh;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 150px;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
 }
 
-#menu_switch_language {
-    border: none;
-    border-radius: 25%;
-    font-size: 80%;
-    min-width: 70px;
-    margin-bottom: 50px;
+.menu_main_button,
+.menu_sub_button {
+    vertical-align: middle;
+    text-align: center;
+    transition: .3s;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid grey;
+    padding: 1vh 0vw 1vh 0vw;
+    max-width: 300px;
 }
 
-#menu_game_start_easy,
-#menu_game_start_hard,
-#menu_game_start_hell {
-    font-size: 130%;
-    margin-bottom: 10px;
-    min-width: 220px;
+.menu_main_button:hover,
+.menu_sub_button:hover {
+    background-color: rgb(255, 255, 242);
+}
+
+.menu_main_button {
+    margin-top: 1vh;
+    border: 1px solid grey;
+    width: 30vw;
+    padding: 1vh 2vw 1vh 2vw;
+    background-color: rgb(247, 247, 247);
+}
+
+.menu_sub_menu_container {
+    display: none;
+    margin: auto;
+    width: 30vw;
 }
 
 @media only screen and (max-device-width: 450px),
 screen and (max-width: 450px) {
-    #menu_title {
-        font-size: 700%;
-        margin-bottom: 40%;
-    }
-    #menu_switch_language {
-        font-size: 250%;
-        margin-bottom: 30%;
-    }
-    #menu_game_start_easy,
-    #menu_game_start_hard,
-    #menu_game_start_hell {
-        font-size: 320%;
-        min-width: 40%;
-        border-radius: 10%;
-        margin-bottom: 3%;
+    .menu_main_button,
+    .menu_sub_menu_container {
+        width: 50vw;
     }
 }

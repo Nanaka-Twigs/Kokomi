@@ -1,11 +1,6 @@
-#instruction_img {
-    max-width: 300px;
-    float: right;
-    margin-left: 20px;
-}
-
-#instruction_img img {
-    width: 100%;
+.instruction_img img {
+    width: 80vw;
+    max-width: 400px;
 }
 
 #instruction_container {
@@ -16,16 +11,15 @@
 #instruction_frame {
     overflow: hidden;
     text-align: center;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 4vh auto 4vh auto;
     width: 80%;
 }
 
 #instruction_title {
-    font-size: 200%;
+    font-size: 5vh;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 50px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 #instruction_go_back,
@@ -38,25 +32,26 @@
     border-radius: 25%;
 }
 
-@media only screen and (max-device-width: 450px),
-screen and (max-width: 450px) {
-    #instruction_title {
-        font-size: 500%;
-    }
-    #instruction_img {
-        display: none;
-    }
-    #instruction_container {
-        font-size: 250%;
-        margin-bottom: 20%;
-    }
-    #instruction_go_back,
-    #instruction_ready {
-        margin-bottom: 3%;
-        font-size: 330%;
-        width: 60%;
-    }
-    #instruction_container p {
-        margin-bottom: 0px;
+.instruction_item {
+    position: relative;
+}
+
+.instruction_text {
+    display: none;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 3vmin;
+    padding: 0 10% 0 10%;
+    text-align: left;
+    width: -webkit-fill-available;
+}
+
+@media only screen and (max-device-width: 375px),
+screen and (max-width: 375px) {
+    #instruction_frame {
+        margin: 10vh auto 10vh auto;
     }
 }
