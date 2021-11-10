@@ -10,8 +10,6 @@
     <!-- css file -->
     <link rel="preload" href="sys\css\font\FZFW-ZhuZiAYuanS-M--GB1-0.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="sys\css\font\FZFW-ZhuZiAYuanS-R--GB1-0.woff" as="font" type="font/woff" crossorigin>
-
-    <link rel="stylesheet" href="sys\css\font.css">
     <link rel="stylesheet" href="sys\css\load.css">
     <link rel="stylesheet" href="sys\css\main.css">
     <link rel="stylesheet" href="sys\css\menu.css">
