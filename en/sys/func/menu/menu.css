@@ -1,0 +1,49 @@
+#block_menu {
+    display: block;
+}
+
+#menu_title {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+}
+
+.menu_main_button,
+.menu_sub_button {
+    vertical-align: middle;
+    text-align: center;
+    transition: .3s;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid grey;
+    padding: 1vh 0vw 1vh 0vw;
+    max-width: 300px;
+}
+
+.menu_main_button:hover,
+.menu_sub_button:hover {
+    background-color: rgb(255, 255, 242);
+}
+
+.menu_main_button {
+    margin-top: 1vh;
+    border: 1px solid grey;
+    width: 30vw;
+    padding: 1vh 2vw 1vh 2vw;
+    background-color: rgb(247, 247, 247);
+}
+
+.menu_sub_menu_container {
+    display: none;
+    margin: auto;
+    width: 30vw;
+}
+
+@media only screen and (max-device-width: 450px),
+screen and (max-width: 450px) {
+    .menu_main_button,
+    .menu_sub_menu_container {
+        width: 50vw;
+    }
+}

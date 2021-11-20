@@ -1,0 +1,26 @@
+#msg {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    text-align: center;
+    z-index: 7;
+}
+
+#msg_txt {
+    background: rgb(247, 247, 247);
+    width: 50vh;
+    max-width: 70vw;
+    height: 40vh;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    color: red;
+}

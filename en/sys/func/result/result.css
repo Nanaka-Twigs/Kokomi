@@ -1,0 +1,59 @@
+#world_rank_title {
+    font-size: 5vh;
+    margin: 3vh auto 1vh auto;
+}
+
+#result_go_back {
+    border: none;
+    border-radius: 30px;
+    min-width: 130px;
+}
+
+#result_go_back,
+#world_rank_position {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+#result_score {
+    border: 1px solid rgb(255 255 242);
+    padding: 2vmin;
+    width: fit-content;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background: rgb(244 244 244);
+    margin: 2vh auto 2vh auto;
+}
+
+table.EI {
+    border: 1px solid #E9E9E1;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.EI td,
+table.EI th {
+    border: 1px solid #E9E9E1;
+    padding: 4px 0px;
+    font-weight: 400;
+}
+
+table.EI tbody td {
+    font-size: 16px;
+}
+
+table.EI thead,
+table.EI th {
+    background: #FCFFE2;
+}
+
+table.EI thead th {
+    font-size: 17px;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+}

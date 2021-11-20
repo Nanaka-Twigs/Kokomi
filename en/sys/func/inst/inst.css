@@ -1,0 +1,57 @@
+.instruction_img img {
+    width: 80vw;
+    max-width: 400px;
+}
+
+#instruction_container {
+    text-align: left;
+    margin-right: 6%;
+}
+
+#instruction_frame {
+    overflow: hidden;
+    text-align: center;
+    margin: 4vh auto 4vh auto;
+    width: 80%;
+}
+
+#instruction_title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#instruction_go_back,
+#instruction_ready {
+    margin-bottom: 5px;
+}
+
+#instruction_go_back {
+    border: none;
+    border-radius: 30px;
+}
+
+.instruction_item {
+    position: relative;
+}
+
+.instruction_text {
+    display: none;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 3vmin;
+    padding: 0 10% 0 10%;
+    text-align: left;
+    width: -webkit-fill-available;
+}
+
+@media only screen and (max-device-width: 375px),
+screen and (max-width: 375px) {
+    #instruction_frame {
+        margin: 10vh auto 10vh auto;
+    }
+}
